@@ -1,0 +1,55 @@
+# Allow search engines but prevent aggressive crawling
+User-agent: *
+Crawl-delay: 10
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json
+Disallow: /*?*
+
+# Block HTTrack
+User-agent: HTTrack
+Disallow: /
+
+# Block other scrapers
+User-agent: EmailCollector
+Disallow: /
+
+User-agent: EmailSiphon
+Disallow: /
+
+User-agent: WebBandit
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: Offline Explorer
+Disallow: /
+
+User-agent: Teleport
+Disallow: /
+
+User-agent: TeleportPro
+Disallow: /
+
+User-agent: WebStripper
+Disallow: /
+
+User-agent: WebSauger
+Disallow: /
+
+User-agent: WebRipper
+Disallow: /
+
+User-agent: Wget
+Disallow: /
+
+User-agent: Curl
+Disallow: /
+
+# Allow important bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
