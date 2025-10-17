@@ -8,26 +8,26 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    obfuscatorPlugin({
-      options: {
-        compact: true,
-        controlFlowFlattening: true,
-        deadCodeInjection: true,
-        debugProtection: true,
-        debugProtectionInterval: 2000,
-        disableConsoleOutput: true,
-        identifierNamesGenerator: 'hexadecimal',
-        log: false,
-        renameGlobals: false,
-        rotateStringArray: true,
-        selfDefending: true,
-        stringArray: true,
-        stringArrayEncoding: ['base64'],
-        stringArrayThreshold: 0.75,
-        transformObjectKeys: true,
-        unicodeEscapeSequence: false
-      },
-      apply: 'build', // Only in production
-    })
+    // obfuscatorPlugin({
+    //   options: {
+    //     compact: true,
+    //     controlFlowFlattening: true,
+    //     deadCodeInjection: true,
+    //     debugProtection: true,
+    //     debugProtectionInterval: 2000,
+    //     disableConsoleOutput: true,
+    //     identifierNamesGenerator: 'hexadecimal',
+    //     log: false,
+    //     renameGlobals: false,
+    //     rotateStringArray: true,
+    //     selfDefending: true,
+    //     stringArray: true,
+    //     stringArrayEncoding: ['base64'],
+    //     stringArrayThreshold: 0.75,
+    //     transformObjectKeys: true,
+    //     unicodeEscapeSequence: false
+    //   },
+    //   apply: 'build', // Only in production
+    // })
   ],
 })
